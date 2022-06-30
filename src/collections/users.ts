@@ -1,9 +1,9 @@
-import { Bson } from "../../deps.ts";
+import { ObjectId } from "../../deps.ts";
 import { client } from "../utils/dbConnect.ts";
 
 // Defining schema interface
 interface UserSchema {
-  _id: Bson.ObjectId | string;
+  _id: ObjectId | string;
   name: string;
   password: string;
   email: string;
